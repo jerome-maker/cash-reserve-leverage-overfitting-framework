@@ -1,0 +1,56 @@
+{
+ "Taiwan": {
+  "return_test": {
+   "n_combos": 7500,
+   "T": 514,
+   "best_idx": 45,
+   "dbar_best": -1.0091970086908349e-05,
+   "V_obs": -0.00022880078706336918,
+   "pval": 0.902
+  },
+  "downside_test": {
+   "n_combos": 7500,
+   "T": 514,
+   "best_idx": 4754,
+   "dbar_best": 0.00017568180994177382,
+   "V_obs": 0.003982982117588606,
+   "pval": 0.0
+  }
+ },
+ "United States": {
+  "return_test": {
+   "n_combos": 7500,
+   "T": 521,
+   "best_idx": 45,
+   "dbar_best": -1.5573729396378987e-05,
+   "V_obs": -0.0003554769832905696,
+   "pval": 0.942
+  },
+  "downside_test": {
+   "n_combos": 7500,
+   "T": 521,
+   "best_idx": 6254,
+   "dbar_best": 0.00014018671041734183,
+   "V_obs": 0.003199821163463386,
+   "pval": 0.0
+  }
+ },
+ "Australia": {
+  "return_test": {
+   "n_combos": 7500,
+   "T": 520,
+   "best_idx": 45,
+   "dbar_best": -3.3424752873511244e-06,
+   "V_obs": -7.622016363277863e-05,
+   "pval": 0.847
+  },
+  "downside_test": {
+   "n_combos": 7500,
+   "T": 520,
+   "best_idx": 4754,
+   "dbar_best": 0.0001469635131123518,
+   "V_obs": 0.0033512837207387686,
+   "pval": 0.0
+  }
+ }
+}

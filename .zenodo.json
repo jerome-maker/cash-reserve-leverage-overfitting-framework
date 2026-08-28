@@ -1,0 +1,25 @@
+{
+  "title": "Data and code for \"Which Backtested Parameters Can You Trust? A Leverage-Overfitting Framework for Cash-Reserve Strategies\"",
+  "description": "Data and code supporting a paper backtesting a tactical cash-reserve strategy against dollar-cost averaging in Taiwan, the United States, and Australia, and introducing a framework crossing a parameter-leverage diagnostic against three overfitting checks (Probability of Backtest Overfitting via Combinatorially Symmetric Cross-Validation, the Deflated Sharpe Ratio, and White's Reality Check) to classify each of the strategy's five parameters by how much it matters and how much its backtested optimum can be trusted. Includes real daily price series (Yahoo Finance) and real historical cash-reserve interest-rate series (Bank of Taiwan; FDIC/FRED; Reserve Bank of Australia via DBnomics) for all three markets, and all Python scripts used to produce every table and figure in the paper.",
+  "creators": [
+    {
+      "name": "Chou, Jerome Chih-Lung",
+      "affiliation": "National Taiwan University of Science and Technology"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "upload_type": "dataset",
+  "keywords": [
+    "tactical asset allocation",
+    "dollar-cost averaging",
+    "cash reserves",
+    "backtest overfitting",
+    "probability of backtest overfitting",
+    "deflated Sharpe ratio",
+    "Reality Check",
+    "cross-market comparison",
+    "Taiwan",
+    "Australia"
+  ]
+}
