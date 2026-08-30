@@ -1,6 +1,6 @@
 # Which Backtested Parameters Can You Trust? A Leverage-Overfitting Framework for Cash-Reserve Strategies
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22136987.svg)](https://doi.org/10.5281/zenodo.22136987)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22136986.svg)](https://doi.org/10.5281/zenodo.22136986)
 
 Data and code supporting the paper by Jerome Chih-Lung Chou (Graduate Institute of
 Finance, National Taiwan University of Science and Technology), submitted to
@@ -86,4 +86,4 @@ If you use this repository, please cite both the paper and the archive:
 
 > Chou, J. C.-L. (2026). *Data and code for "Which Backtested Parameters Can You Trust? A
 > Leverage-Overfitting Framework for Cash-Reserve Strategies"* [Data set]. Zenodo.
-> https://doi.org/10.5281/zenodo.22136987
+> https://doi.org/10.5281/zenodo.22136986
