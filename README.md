@@ -28,6 +28,8 @@ dsr.py                  Deflated Sharpe Ratio, best-of-five allocation-ratio tri
 reality_check.py        White's Reality Check across the full 7,500-combination grid (Table 6)
 bootstrap_ci.py         Paired stationary-bootstrap confidence intervals for the
                         headline tactical-vs-DCA comparison (Supporting Information Table S6)
+cost_sensitivity.py     Tactical-vs-DCA differences at assumed transaction costs from
+                        0% to 0.50% per purchase (Supporting Information Table S7)
 base_paper_4market.py   Main comparison, sensitivity sweep, design/OOS split, threshold robustness, parameter-leverage diagnostic (Tables 2, 3, 7, 8)
 make_figures.py         Figures 1-7
 make_fig8_leverage_pbo.py  Figure 8 (leverage-vs-PBO scatter)
@@ -45,6 +47,7 @@ python base_paper_4market.py      # Tables 2, 3, 7, 8 -> results/base_paper_resu
 python pbo_all_params.py          # Table 4                -> results/pbo_by_param.json
 python dsr.py                     # Table 5                -> results/dsr_results.json
 python bootstrap_ci.py            # SI Table S6            -> printed to stdout (~3 minutes, 2,000 paired replications per market)
+python cost_sensitivity.py        # SI Table S7            -> printed to stdout (~1 minute)
 python reality_check.py           # Table 6                -> results/reality_check_results.json (slow: ~10 minutes, simulates 7,500 combinations x 3 markets and runs a 1,000-replication stationary bootstrap on each)
 python make_figures.py            # Figures 1-7            -> figures/
 python make_fig8_leverage_pbo.py  # Figure 8                -> figures/
