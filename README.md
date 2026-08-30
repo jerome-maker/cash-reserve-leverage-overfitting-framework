@@ -3,8 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22136986.svg)](https://doi.org/10.5281/zenodo.22136986)
 
 Data and code supporting the paper by Jerome Chih-Lung Chou (Graduate Institute of
-Finance, National Taiwan University of Science and Technology), submitted to
-*Australian Economic Papers*.
+Finance, National Taiwan University of Science and Technology).
 
 The paper backtests a rule-based tactical cash-reserve strategy against 100% dollar-cost
 averaging (DCA) in three equity markets (Taiwan, the United States, and Australia), and
@@ -81,8 +80,7 @@ License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). See `LICENSE
 If you use this repository, please cite both the paper and the archive:
 
 > Chou, J. C.-L. (2026). *Which Backtested Parameters Can You Trust? A Leverage-Overfitting
-> Framework for Cash-Reserve Strategies*. Working paper, submitted to Australian Economic
-> Papers.
+> Framework for Cash-Reserve Strategies*. Working paper, under review.
 
 > Chou, J. C.-L. (2026). *Data and code for "Which Backtested Parameters Can You Trust? A
 > Leverage-Overfitting Framework for Cash-Reserve Strategies"* [Data set]. Zenodo.
