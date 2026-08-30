@@ -52,9 +52,8 @@ for ax, name in zip(axes, MARKETS):
     xpad = max(xs) * 0.15 if max(xs) > 0 else 0.001
     ax.set_xlim(-xpad * 0.3, max(xs) + xpad)
 
-fig.suptitle("Figure 8. Leverage vs. PBO by parameter, all three markets "
-              "(dashed lines: PBO = 50% and each market's median leverage)", fontsize=10)
-fig.tight_layout(rect=[0, 0, 1, 0.92])
+fig.tight_layout()
 fig.savefig(os.path.join(FIGDIR, "fig8_leverage_pbo.pdf"), dpi=200)
+fig.savefig(os.path.join(FIGDIR, "fig8_leverage_pbo.png"), dpi=300)
 plt.close(fig)
 print("fig8 done")

@@ -61,13 +61,12 @@ def fig1_mechanism():
             label=f"trigger band (\u2212{FIXED['threshold']*100:.0f}% of high)")
     ax.fill_between(t, prices, band, where=(prices <= band), color="#d62728", alpha=0.15,
                      label="price at/below trigger band")
-    ax.set_title("Figure 1. Tactical cash-reserve trigger mechanism (Taiwan, 2009\u20132018 design period)",
-                 fontsize=10)
     ax.set_ylabel("Price index (NT$)", fontsize=9)
     ax.legend(fontsize=7, loc="upper left")
     ax.tick_params(labelsize=8)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig1_mechanism.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig1_mechanism.png"), dpi=300)
     plt.close(fig)
     print("fig1 done")
 
@@ -129,10 +128,9 @@ def fig2_equity_curves():
         ax.tick_params(labelsize=7)
         if ax is axes.flat[0]:
             ax.legend(fontsize=7, loc="upper left")
-    fig.suptitle("Figure 2. NAV growth (portfolio value / cumulative contributions), "
-                  "DCA vs. tactical cash-reserve strategy", fontsize=10)
-    fig.tight_layout(rect=[0, 0, 1, 0.95])
+    fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig2_equity_curves.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig2_equity_curves.png"), dpi=300)
     plt.close(fig)
     print("fig2 done")
 
@@ -193,10 +191,9 @@ def fig3_drawdown():
         ax.tick_params(labelsize=7)
         if ax is axes.flat[0]:
             ax.legend(fontsize=7, loc="lower left")
-    fig.suptitle("Figure 3. NAV drawdown (underwater chart), DCA vs. tactical cash-reserve strategy",
-                 fontsize=10)
-    fig.tight_layout(rect=[0, 0, 1, 0.95])
+    fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig3_drawdown.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig3_drawdown.png"), dpi=300)
     plt.close(fig)
     print("fig3 done")
 
@@ -214,11 +211,11 @@ def fig4_sensitivity():
         ax.plot([a * 100 for a in allocs], sortinos, marker="o", color=colors[name], label=name)
     ax.set_xlabel("Cash-allocation ratio (%)", fontsize=9)
     ax.set_ylabel("Full-sample Sortino ratio", fontsize=9)
-    ax.set_title("Figure 4. Sensitivity of the Sortino ratio to the cash-allocation ratio", fontsize=10)
     ax.legend(fontsize=8)
     ax.tick_params(labelsize=8)
     fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig4_sensitivity.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig4_sensitivity.png"), dpi=300)
     plt.close(fig)
     print("fig4 done")
 
@@ -237,11 +234,9 @@ def fig5_tornado():
         ax.set_title(name, fontsize=10)
         ax.set_xlabel("Design-period Sortino swing (max \u2212 min)", fontsize=8)
         ax.tick_params(labelsize=8)
-    fig.suptitle("Figure 5. One-at-a-time parameter-leverage diagnostic "
-                  "(swing in design-period Sortino when varying one parameter, "
-                  "others held at the fixed convention)", fontsize=9.5)
-    fig.tight_layout(rect=[0, 0, 1, 0.94])
+    fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig5_tornado.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig5_tornado.png"), dpi=300)
     plt.close(fig)
     print("fig5 done")
 
@@ -275,9 +270,9 @@ def fig6_cross_market():
     ax.set_title("Sortino ratio", fontsize=10)
     ax.legend(fontsize=7)
 
-    fig.suptitle("Figure 6. Cross-market comparison, DCA vs. tactical cash-reserve strategy", fontsize=10)
-    fig.tight_layout(rect=[0, 0, 1, 0.92])
+    fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig6_cross_market.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig6_cross_market.png"), dpi=300)
     plt.close(fig)
     print("fig6 done")
 
@@ -299,11 +294,9 @@ def fig7_pbo():
         ax.set_title(f"{name}  (PBO = {pbo:.1%})", fontsize=10)
         ax.set_xlabel("logit(\u03c9)", fontsize=8)
         ax.tick_params(labelsize=7)
-    fig.suptitle("Figure 7. Distribution of the CSCV logit statistic across all "
-                 "C(16,8)=12,870 IS/OOS splits (mass left of the dashed line = overfit splits)",
-                 fontsize=9.5)
-    fig.tight_layout(rect=[0, 0, 1, 0.94])
+    fig.tight_layout()
     fig.savefig(os.path.join(FIGDIR, "fig7_pbo.pdf"), dpi=200)
+    fig.savefig(os.path.join(FIGDIR, "fig7_pbo.png"), dpi=300)
     plt.close(fig)
     print("fig7 done")
 
