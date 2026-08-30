@@ -51,11 +51,15 @@ FIXED_CONVENTION = dict(threshold=0.15, lookback=52, cap=0.20, deploy=1.00, allo
 
 
 def _clean_price_series(price, jump_threshold=0.30):
-    """Same isolated-jump correction used in the base study's own exploratory
-    grid-search notebook: an isolated single-day return beyond jump_threshold
-    (e.g. an unregistered unit split not reflected in adjusted-close metadata)
-    is treated as a data artifact and the pre-event segment is backward-scaled
-    by the observed jump ratio."""
+    """Repair a vendor split-adjustment artifact.
+
+    The 0050.TW series carries its one-for-four split (effective 18 June 2025)
+    only from 2 January 2014 onward, leaving 2009-2013 on an unadjusted scale
+    and producing an isolated -75.1% single-day change that no corporate action
+    explains. An isolated single-day return beyond jump_threshold is treated as
+    such an artifact: the pre-event segment is backward-scaled by the observed
+    jump ratio, putting the whole series on one split- and dividend-adjusted
+    basis."""
     price = price.copy()
     ret = price.pct_change()
     jump_dates = ret[ret.abs() > jump_threshold].index
